@@ -19,5 +19,13 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        names:'pages',
+        path:'${_dirname}/src/pages/',
+      },
+    },
+      'gatsby-plugin-mdx',
   ],
 };
